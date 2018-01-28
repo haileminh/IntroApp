@@ -7,4 +7,60 @@
         android:id="@+id/vpg_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/txt_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Skip"
+            android:textColor="@color/colorBlack"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Next"
+            android:textColor="@color/colorBlack"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <View
+                android:id="@+id/indicator1"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:background="@drawable/bg_indicator_active" />
+
+            <View
+                android:id="@+id/indicator2"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@id/indicator1"
+                android:background="@drawable/bg_indicator_inactive" />
+
+            <View
+                android:id="@+id/indicator3"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@id/indicator2"
+                android:background="@drawable/bg_indicator_inactive" />
+        </RelativeLayout>
+    </RelativeLayout>
 </RelativeLayout>
