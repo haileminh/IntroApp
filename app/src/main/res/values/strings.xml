@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">IntroApp</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="android_title">Android</string>
+    <string name="android_description">Khóa học lập trình Android,khóa học lập trình Android </string>
 </resources>
